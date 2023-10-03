@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: 	#3CB371;
+}
+
+header .chrono{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+hr {
+    height: 1px;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 80px;
+}
+.row input{
+    height: 25px;
+    width: 300px;
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    padding: 15px 0px;
+    border-radius: 5px;
+    font-size: 18px;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    margin-bottom: 250px;
+}
+.time{
+    display: none;
+    color: #fff;
+    font-size: 70px;
+   font-family: 'montserrat', sans-serif;
+    text-align: center;
+}
+.be-back p{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}

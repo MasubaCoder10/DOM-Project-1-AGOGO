@@ -190,3 +190,17 @@ function endTime() {
   timeH.style.display = "none";
   be_back.hidden = true;
 }
+
+
+function filterProduct(value) {
+  // button class code
+  let buttons = document.querySelectorAll(".tab-btn");
+  buttons.forEach((button) => {
+    //chek if value equals innnerText
+    if (value.toUpperCase() == button.innerText.toUpperCase()) {
+      button.classList.add("active");
+    } else {
+      button.classList.remove("active");
+    }
+  });
+}

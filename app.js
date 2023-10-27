@@ -8,7 +8,7 @@ const toweny_SECS = document.getElementById("20_SECS");
 
 toweny_SECS.addEventListener("click", () => {
   timeH.style.display = "block";
-
+  be_back.style.display = "block";
   // get time back
   var date = new Date();
   var current_time = `${
@@ -26,6 +26,7 @@ toweny_SECS.addEventListener("click", () => {
     displayTime(toweny_secs);
     if (toweny_secs <= 0 || toweny_secs < 1) {
       endTime();
+      document.location.reload()
       clearInterval(countDown);
     }
   }, 1000);
@@ -37,7 +38,7 @@ const CAPPUCINO = document.getElementById("CAPPUCINO_5");
 
 CAPPUCINO.addEventListener("click", () => {
   timeH.style.display = "block";
-
+  be_back.style.display = "block";
   // get time back
   var date = new Date();
   var current_time = `${
@@ -55,6 +56,7 @@ CAPPUCINO.addEventListener("click", () => {
     displayTime(fiveCappicino);
     if (fiveCappicino <= 0 || fiveCappicino < 1) {
       endTime();
+      document.location.reload()
       clearInterval(countDown);
     }
   }, 1000);
@@ -66,7 +68,7 @@ const THE = document.getElementById("THE_15");
 
 THE.addEventListener("click", () => {
   timeH.style.display = "block";
-
+  be_back.style.display = "block";
   // get time back
   var date = new Date();
   var current_time = `${
@@ -84,6 +86,7 @@ THE.addEventListener("click", () => {
     displayTime(fiveteenThe);
     if (fiveteenThe <= 0 || fiveteenThe < 1) {
       endTime();
+      document.location.reload()
       clearInterval(countDown);
     }
   }, 1000);
@@ -95,6 +98,7 @@ const PETIT_DEJEUNER = document.getElementById("PETIT_DEJEUNER_20");
 
 PETIT_DEJEUNER.addEventListener("click", () => {
   timeH.style.display = "block";
+  be_back.style.display = "block";
 
   // get time back
   var date = new Date();
@@ -113,6 +117,7 @@ PETIT_DEJEUNER.addEventListener("click", () => {
     displayTime(petitDejeuner);
     if (petitDejeuner <= 0 || petitDejeuner < 1) {
       endTime();
+      document.location.reload()
       clearInterval(countDown);
     }
   }, 1000);
@@ -124,6 +129,7 @@ const DEJEUNER = document.getElementById("DEJEUNER_30");
 
 DEJEUNER.addEventListener("click", () => {
   timeH.style.display = "block";
+  be_back.style.display = "block";
 
   // get time back
   var date = new Date();
@@ -140,6 +146,7 @@ DEJEUNER.addEventListener("click", () => {
     displayTime(dejeuner);
     if (dejeuner <= 0 || dejeuner < 1) {
       endTime();
+      document.location.reload()
       clearInterval(countDown);
     }
   }, 1000);
@@ -151,6 +158,7 @@ const form = document.querySelector("#input-box");
 const input = document.querySelector("#input-number");
 form.addEventListener("submit", (e) => {
   timeH.style.display = "block";
+  be_back.style.display = "block";
   e.preventDefault();
   if (countDown != null) {
     clearInterval(countDown);
@@ -170,6 +178,7 @@ form.addEventListener("submit", (e) => {
     displayTime(inputVal);
     if (inputVal <= 0 || inputVal < 1) {
       endTime();
+      document.location.reload()
       clearInterval(countDown);
     }
   }, 1000);
@@ -188,7 +197,7 @@ function displayTime(second) {
 // endTime function
 function endTime() {
   timeH.style.display = "none";
-  be_back.hidden = true;
+  be_back.style.display = "none";
 }
 
 

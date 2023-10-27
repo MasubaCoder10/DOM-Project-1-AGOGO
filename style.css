@@ -11,16 +11,11 @@ body{
 header .chrono{
     color: #fff;
     font-size: 1.5rem;
-    /* display: grid;
-    grid-template-columns: repeat(auto-fill, 1fr);
-    place-items: center;
-    grid-auto-flow: column; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    cursor: pointer;
-    
+    cursor: pointer;  
     margin: 2rem;
 }
 hr {

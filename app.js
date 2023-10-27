@@ -157,6 +157,7 @@ DEJEUNER.addEventListener("click", () => {
 const form = document.querySelector("#input-box");
 const input = document.querySelector("#input-number");
 form.addEventListener("submit", (e) => {
+  
   timeH.style.display = "block";
   be_back.style.display = "block";
   e.preventDefault();
@@ -164,7 +165,7 @@ form.addEventListener("submit", (e) => {
     clearInterval(countDown);
   }
   let inputVal = input.value * 60 + 1;
-
+  input.value = ""
   // get time back
   var date = new Date();
   var current_time = `${
